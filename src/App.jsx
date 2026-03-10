@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import JsonInput    from './components/JsonInput.jsx';
 import SummaryBar   from './components/SummaryBar.jsx';
 import DiffResults  from './components/DiffResults.jsx';
@@ -450,6 +451,7 @@ export default function App() {
           </div>
         )}
       </main>
+      <Analytics />
     </div>
   );
 }
